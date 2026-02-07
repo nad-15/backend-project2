@@ -9,9 +9,10 @@ const app = express()
 
 app.use("/movies", movieRoutes)
 
-app.get("/hello", (req, res)=> {
-    res.json({message: "Hello our there rom hello"});
+app.get("/", (req, res)=> {
+    res.json({message: "Hello our there from homepage"});
 });
+
 
 const PORT = 5001;
 app.listen(PORT, ()=> {
