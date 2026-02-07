@@ -10,7 +10,7 @@ const app = express()
 app.use("/movies", movieRoutes)
 
 app.get("/hello", (req, res)=> {
-    res.json({message: "Hello our there"});
+    res.json({message: "Hello our there rom hello"});
 });
 
 const PORT = 5001;
